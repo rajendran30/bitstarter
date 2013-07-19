@@ -15,11 +15,13 @@ app.listen(port, function() {
 var readFromHTML = function (response){
 response.send ('into readFromHTML');
 fs.readFile('index.html', 'utf8', function (err,data) {
+
+
+  if (err) {
+    throw err;
+  }
     response.send ('into the function');
     response.send('the data is '+data);
-  if (err) {
-    return err;
-  }
   return (data);
 });
 
