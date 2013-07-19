@@ -13,11 +13,12 @@ app.listen(port, function() {
 });
 
 var readFromHTML = function (response){
-response.send ('into readFromHTML');
+response.send ('into readFromHTML----'+data);
 fs.readFile('index.html', 'utf8', function (err,data) {
 
 
   if (err) {
+
     throw err;
   }
     response.send ('into the function');
