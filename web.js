@@ -14,5 +14,5 @@ app.listen(port, function() {
 
 var readFromHTML = function (){
 
-respond.send(fs.readFilesync('./index.html').toString());  
+response.send(fs.readFilesync('./index.html').toString());  
 };
