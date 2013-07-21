@@ -8,7 +8,8 @@
 <style type="text/css">
   body{
   padding-top: 20px;
-  padding-bottom: 40px;}
+  padding-bottom: 40px;
+  }
   .container{
   width: 960px;
   }
@@ -19,21 +20,19 @@
   padding: 10px 0 px 10px 0px;
   }
   .video, .thermometer, .order, .social {
+  /*Internal borders have 1px width, thus need to add 4x 1px to 120px.*/
   border: 1px dotted;
-  text-align: center;
-  }
-  .video, .thermometer, .order, .social{
-  border: 1px dotted;
-  text-align: center;
+  text-align:center;
   }
   .video{
   /*internal borders have 1px width, thus need to add 4 x 1 px to 120 px.*/
   height: 124px;
   line-height: 124px;
   }
-.thermometer, .order, .social{
+  .thermometer, .order, .social{
 /*line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
   height: 40px;
+  line-height: 40px;
   }
   div.row{
   border: 1px solid;
@@ -55,12 +54,22 @@
     </div>
   <div vlass="row heading">
     <div class="span12">
+      <h1> Bitstarter Title</h1>
+      </div>
+    </div>
+<div class="row subheading">
+  <div class="span12">
       <p class="lead">This is my first bitstarter project.</p>
       </div>
     </div>
+<div class="row pitch">
   <div class="span 6 video">
     Video
     </div>
+<div class ="span6">
+<div class="thermometer">
+  Thermometer
+  </div>
   <div class="order">
     Order
     </div>
@@ -69,7 +78,7 @@
     </div>
 </div>
 </div>
-<div class="row secion1">
+<div class="row section1">
   <div class="span12">
     Market Section 1
     </div>
@@ -90,5 +99,5 @@ Footer
 </div>
 </div>
 </div>
-</div>
+</body>
 </html>
